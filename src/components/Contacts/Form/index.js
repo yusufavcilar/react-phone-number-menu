@@ -24,6 +24,7 @@ function Form({addContact , contacts}) {
     <form onSubmit={onSubmit}>
       <div>
         <input
+          className="fullname"
           name="fullname"
           value={form.fullname}
           placeholder="Full Name"
@@ -32,6 +33,7 @@ function Form({addContact , contacts}) {
       </div>
       <div>
         <input
+          className="phone_number"
           name="phone_number"
           value={form.phone_number}
           placeholder="Phone Number"
@@ -39,7 +41,7 @@ function Form({addContact , contacts}) {
         />
       </div>
       <div>
-        <button>ADD</button>
+        <button className="btn">ADD</button>
       </div>
     </form>
   );
